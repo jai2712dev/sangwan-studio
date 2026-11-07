@@ -3,70 +3,201 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Modern websites and digital solutions for businesses.">
-  <title>Sangwan Digital Studio</title>
-  <meta name="google-site-verification" content="HAFeQiOI5q0RVq0wEBPR1PD0cC9WO87VwkBwqc8-uiI" />
-  <link rel="icon" href="logo.png">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Sangwan Digital Studio creates clean, responsive websites, landing pages and practical frontend improvements for growing businesses.">
+  <meta property="og:title" content="Sangwan Digital Studio — Websites built with purpose">
+  <meta property="og:description" content="Thoughtful web design and practical digital solutions for real businesses.">
+  <meta property="og:type" content="website">
+  <title>Sangwan Digital Studio | Web Design & Development</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="logo" href="#home" aria-label="Sangwan Digital Studio home"><img src="logo.png" alt="Sangwan Digital Studio logo"></a>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-    <nav class="menu" aria-label="Main navigation">
-      <a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
-      <a class="nav-cta" href="#contact">Get a Quote</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home" aria-label="Sangwan Digital Studio home">
+      <img src="logo.svg" alt="" width="44" height="44">
+      <span>SANGWAN<span class="brand-light"> DIGITAL STUDIO</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-menu">
+      <span></span><span></span>
+    </button>
+    <nav class="menu" id="main-menu" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#work">Our work</a><a href="#process">Process</a><a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a>
     </nav>
   </div>
 </header>
+
 <main>
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">WEB DESIGN · DIGITAL SOLUTIONS</p>
-        <h1>Make your business<br><span>stand out online.</span></h1>
-        <p class="lead">Modern, mobile-friendly websites that help your business look professional, build trust, and make it easy for customers to reach you.</p>
-        <div class="actions"><a class="btn primary" href="#contact">Start a Project ↗</a><a class="btn secondary" href="#services">Explore Services</a></div>
-        <p class="trust">✓ Clear communication · Responsive design · Practical solutions</p>
+  <section class="hero section-pad" id="home">
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> INDEPENDENT WEB DESIGN STUDIO</p>
+        <h1>Good businesses<br>deserve a <span class="text-gradient">better website.</span></h1>
+        <p class="hero-lead">We design and build clear, responsive websites that help businesses make a confident first impression and turn visitors into enquiries.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Discuss your project <span>↗</span></a>
+          <a class="button button-quiet" href="#work">Explore our work <span>↓</span></a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span> Clear communication. Thoughtful design. Practical delivery.</div>
       </div>
-      <div class="preview">
-        <div class="browser"><span></span><span></span><span></span><small>your-business.com</small></div>
-        <div class="preview-content"><p class="eyebrow">YOUR NEXT ONLINE MOVE</p><h2>A better website.<br><span>A stronger first impression.</span></h2><div class="lines"><i></i><i></i><i></i></div><a class="btn primary" href="#contact">LET'S BUILD IT ↗</a><div class="ring"></div></div>
+      <div class="hero-art" aria-label="Abstract website layout preview">
+        <div class="art-top"><span class="window-dots"><i></i><i></i><i></i></span><span>YOUR NEXT WEBSITE</span><span class="art-top-mark">SDS / 01</span></div>
+        <div class="art-content">
+          <div class="art-kicker">A DIGITAL PRESENCE THAT WORKS</div>
+          <div class="art-heading">Make your<br><em>next move</em><br>count.</div>
+          <div class="art-rule"></div>
+          <div class="art-bottom"><span>DESIGN · DEVELOPMENT · DETAIL</span><span class="art-arrow">↗</span></div>
+        </div>
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="floating-tag tag-one">Responsive by design <b>✓</b></div>
+        <div class="floating-tag tag-two"><b>01</b> Built around your goals</div>
       </div>
     </div>
+    <div class="container hero-foot"><span>WEB DESIGN</span><span>LANDING PAGES</span><span>WEBSITE REDESIGN</span><span>FRONTEND IMPROVEMENTS</span></div>
   </section>
-  <section class="section services" id="services">
+
+  <section class="intro-strip">
+    <div class="container intro-inner"><p>Not just a website that looks good.</p><p><span>One that makes it easier for people to choose you.</span></p></div>
+  </section>
+
+  <section class="section-pad services-section" id="services">
     <div class="container">
-      <div class="section-title"><p class="eyebrow">WHAT WE CAN DO</p><h2>Digital services for <span>real businesses.</span></h2><p>Start with what you need today. Build on it as your business grows.</p></div>
-      <div class="cards">
-        <article class="card"><div class="icon">&lt;/&gt;</div><h3>Website Design</h3><p>Clean, responsive websites that introduce your business and make it easy for customers to contact you.</p></article>
-        <article class="card"><div class="icon">↗</div><h3>Landing Pages</h3><p>Focused pages for a service, campaign, product, or offer—with a clear next step for visitors.</p></article>
-        <article class="card"><div class="icon">✦</div><h3>Website Fixes</h3><p>Help with layout issues, mobile responsiveness, small content updates, and visual improvements.</p></article>
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT WE DO / 01</p><h2>Digital services for<br><span class="muted-heading">real-world businesses.</span></h2></div>
+        <p class="section-summary">From a first website to improving an existing one, we focus on useful solutions, clear layouts and a smooth experience across devices.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-top"><span>01</span><span class="service-icon">↗</span></div><h3>Business websites</h3><p>Professional multi-section websites that explain what you do, build confidence and make it easy to get in touch.</p><a href="#contact">Discuss a website <span>↗</span></a></article>
+        <article class="service-card"><div class="service-top"><span>02</span><span class="service-icon">▤</span></div><h3>Landing pages</h3><p>Focused pages for a service, campaign or offer, with a clear message and a strong next step.</p><a href="#contact">Plan a landing page <span>↗</span></a></article>
+        <article class="service-card"><div class="service-top"><span>03</span><span class="service-icon">◈</span></div><h3>Website redesign</h3><p>Refresh an outdated website with a cleaner structure, more consistent visuals and improved usability.</p><a href="#contact">Improve my website <span>↗</span></a></article>
+        <article class="service-card"><div class="service-top"><span>04</span><span class="service-icon">▣</span></div><h3>Mobile responsiveness</h3><p>Improve layouts so pages are easier to read, navigate and use on phones, tablets and desktops.</p><a href="#contact">Fix my mobile layout <span>↗</span></a></article>
+        <article class="service-card"><div class="service-top"><span>05</span><span class="service-icon">&lt;/&gt;</span></div><h3>Frontend bug fixes</h3><p>Help with suitable HTML, CSS and small frontend JavaScript issues, subject to a review of the existing site.</p><a href="#contact">Discuss a website issue <span>↗</span></a></article>
+        <article class="service-card"><div class="service-top"><span>06</span><span class="service-icon">＋</span></div><h3>Website updates</h3><p>Small content, section, image and layout updates to keep your website current and useful.</p><a href="#contact">Request an update <span>↗</span></a></article>
+      </div>
+      <p class="scope-note">Every project is scoped first. Complex backend systems, custom integrations and advanced application development are not included unless separately agreed.</p>
+    </div>
+  </section>
+
+  <section class="work-section section-pad" id="work">
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK / 02</p><h2>Ideas made<br><span class="muted-heading">visible.</span></h2></div>
+        <p class="section-summary">A selection of website concepts and builds. Demo work is labelled clearly so visitors can understand what is a concept and what is a commissioned project.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-card work-large">
+          <a class="work-visual visual-beauty" href="https://shubhaymakeoverdemohomepage.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Shubhay Makeover Studio website concept">
+            <div class="mock-browser"><span></span><span></span><span></span><small>shubhay-makeover</small></div>
+            <div class="beauty-layout"><small>BEAUTY · MAKEUP · BRIDAL</small><strong>Beauty begins<br>with confidence.</strong><i>EXPLORE THE EXPERIENCE ↗</i></div>
+            <div class="beauty-shape"></div>
+          </a>
+          <div class="work-caption"><div><span class="work-type">WEBSITE CONCEPT</span><h3>Shubhay Makeover Studio</h3><p>Beauty studio homepage concept</p></div><a href="https://shubhaymakeoverdemohomepage.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit project">↗</a></div>
+        </article>
+        <article class="work-card">
+          <a class="work-visual visual-moving" href="#contact" aria-label="Great Deal Packers and Movers project preview">
+            <div class="moving-label">GREAT DEAL<br><b>PACKERS & MOVERS</b></div><div class="moving-route"><span>HOME</span><i></i><span>NEW PLACE</span></div><div class="moving-box">↗</div>
+          </a>
+          <div class="work-caption"><div><span class="work-type">DESIGN DIRECTION</span><h3>Great Deal Packers & Movers</h3><p>Service-business website direction</p></div><a href="#contact" aria-label="Enquire about a similar project">↗</a></div>
+        </article>
+        <article class="work-card">
+          <a class="work-visual visual-realestate" href="#contact" aria-label="Real estate website concept preview">
+            <div class="estate-top">GANPATI <span>REAL ESTATE</span></div><div class="estate-building"><i></i><i></i><i></i><i></i><i></i></div><div class="estate-bottom">FIND A PLACE<br>TO CALL HOME.</div>
+          </a>
+          <div class="work-caption"><div><span class="work-type">DESIGN CONCEPT</span><h3>Real estate website</h3><p>Property business layout concept</p></div><a href="#contact" aria-label="Enquire about a similar project">↗</a></div>
+        </article>
+      </div>
+      <p class="work-disclaimer">Portfolio previews are illustrative concepts unless a live project link is explicitly provided. We do not publish client results or testimonials without permission.</p>
+    </div>
+  </section>
+
+  <section class="difference-section section-pad">
+    <div class="container difference-grid">
+      <div><p class="eyebrow">THE STUDIO APPROACH / 03</p><h2>Small studio.<br><span class="muted-heading">Careful attention.</span></h2><p class="section-summary">You work directly with the person building your website. That means fewer handoffs, straightforward conversations and a clear view of what is being delivered.</p></div>
+      <div class="principles">
+        <div class="principle"><span>01</span><div><h3>Built around your business</h3><p>We start with your customers, services and goals—not a one-size-fits-all template.</p></div></div>
+        <div class="principle"><span>02</span><div><h3>Designed for every screen</h3><p>Layouts are planned to work across mobile, tablet and desktop sizes.</p></div></div>
+        <div class="principle"><span>03</span><div><h3>Clear from start to finish</h3><p>Scope, communication and next steps are discussed before work begins.</p></div></div>
+        <div class="principle"><span>04</span><div><h3>Practical, honest delivery</h3><p>We explain what is included and never promise features we cannot deliver.</p></div></div>
       </div>
     </div>
   </section>
-  <section class="section" id="about">
-    <div class="container about-grid"><div class="about-logo"><img src="logo.png" alt="Sangwan Digital Studio logo" loading="lazy"></div><div><p class="eyebrow">ABOUT SANGWAN DIGITAL STUDIO</p><h2>Small details.<br><span>Better digital experiences.</span></h2><p class="muted">We help businesses build a clearer, more professional online presence with straightforward web design and digital support. Every project starts with understanding your goals and making the next step simple.</p><a class="text-link" href="#contact">Tell us about your project →</a></div></div>
+
+  <section class="process-section section-pad" id="process">
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow">HOW WE WORK / 04</p><h2>A clear process.<br><span class="muted-heading">No guesswork.</span></h2></div>
+        <p class="section-summary">A simple, collaborative process keeps the project organised and helps avoid surprises.</p>
+      </div>
+      <div class="process-grid">
+        <article><span>01 / DISCOVER</span><h3>Understand</h3><p>We discuss your business, audience, goals, references and required pages.</p></article>
+        <article><span>02 / PLAN</span><h3>Structure</h3><p>We agree on the page structure, content, visual direction and project scope.</p></article>
+        <article><span>03 / BUILD</span><h3>Create</h3><p>The website is built and checked across common screen sizes.</p></article>
+        <article><span>04 / DELIVER</span><h3>Review & launch</h3><p>You review the work, request agreed changes and receive the final files or deployment handover.</p></article>
+      </div>
+    </div>
   </section>
-  <section class="section contact-section" id="contact">
-    <div class="container contact-box"><div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's build something<br><span>useful together.</span></h2><p class="muted">Tell us what your business needs. We'll discuss a practical starting point.</p></div>
-      <div class="contact-actions"><a class="btn primary" href="https://wa.me/919053114106?text=Hi%2C%20I%20want%20to%20discuss%20a%20website%20project" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a><a class="btn secondary" href="mailto:sangwanjaibhagwan25@gmail.com">Send an Email ↗</a><small>sangwanjaibhagwan25@gmail.com</small></div>
+
+  <section class="about-section section-pad" id="about">
+    <div class="container about-layout">
+      <div class="about-mark"><img src="logo.svg" alt="Sangwan Digital Studio symbol"><span>INDEPENDENT<br>WEB STUDIO</span></div>
+      <div><p class="eyebrow">ABOUT SANGWAN DIGITAL STUDIO / 05</p><h2>Thoughtful websites<br>for <span class="text-gradient">ambitious businesses.</span></h2><p class="about-copy">Sangwan Digital Studio is an independent web design service focused on helping small businesses and growing brands present themselves clearly online. We value useful design, responsive layouts and direct communication.</p><p class="about-copy">Whether you need a new business website, a focused landing page or help improving an existing frontend, we’ll start by understanding what you need and what makes sense for your project.</p><a class="text-link" href="#contact">Tell us what you’re working on <span>↗</span></a></div>
+    </div>
+  </section>
+
+  <section class="faq-section section-pad">
+    <div class="container faq-layout">
+      <div><p class="eyebrow">GOOD TO KNOW / 06</p><h2>Questions, <span class="muted-heading">answered.</span></h2><p class="section-summary">A few useful details before we start a conversation.</p></div>
+      <div class="faq-list">
+        <details><summary>How much does a website cost?<span>＋</span></summary><p>Pricing depends on the number of pages, content, features and condition of any existing website. We’ll discuss your requirements and provide a quote before starting.</p></details>
+        <details><summary>How long does a project take?<span>＋</span></summary><p>Timelines depend on the scope and how quickly content and feedback are provided. A realistic schedule is agreed before work begins.</p></details>
+        <details><summary>Can you fix my existing website?<span>＋</span></summary><p>Often, yes. We first review the website and identify whether the issue is a suitable frontend fix or requires backend access or specialist work outside our current scope.</p></details>
+        <details><summary>Will my website work on mobile?<span>＋</span></summary><p>Responsive behaviour is part of our website design process. We check the layout at mobile, tablet and desktop widths.</p></details>
+        <details><summary>Do you provide hosting and domain names?<span>＋</span></summary><p>We can guide you through suitable hosting and domain options. Domain and hosting charges, if needed, are separate from the website design quote.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section section-pad" id="contact">
+    <div class="container contact-panel">
+      <div class="contact-copy"><p class="eyebrow">HAVE A PROJECT IN MIND? / 07</p><h2>Let’s make your<br>next move <span class="text-gradient">a good one.</span></h2><p>Tell us a little about your business and what you need. We’ll take it from there.</p></div>
+      <div class="contact-actions">
+        <a class="button button-primary button-wide" href="https://wa.me/919053114106?text=Hi%20Sangwan%20Digital%20Studio%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer">Start a WhatsApp conversation <span>↗</span></a>
+        <a class="button button-outline button-wide" href="mailto:sangwanjaibhagwan25@gmail.com?subject=Website%20project%20enquiry">Send an email <span>↗</span></a>
+        <span class="contact-email">sangwanjaibhagwan25@gmail.com</span>
+      </div>
+      <div class="contact-decoration">SDS<span>•</span>2026</div>
     </div>
   </section>
 </main>
-<footer><div class="container footer"><span>© <span id="year"></span> Sangwan Digital Studio</span><span>Thoughtful design. Practical digital solutions.</span></div></footer>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <a class="brand footer-brand" href="#home"><img src="logo.svg" alt="" width="38" height="38"><span>SANGWAN<span class="brand-light"> DIGITAL STUDIO</span></span></a>
+    <p>Thoughtful design. Practical digital solutions.</p>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> Sangwan Digital Studio. All rights reserved.</span><span>Designed with care.</span></div>
+</footer>
+
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
-const toggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
-toggle.addEventListener('click', () => {
-  const open = menu.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', String(open));
-});
-menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  menu.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');
-}));
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const menuButton = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu");
+  menuButton.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("is-open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  });
+  menu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+    menu.classList.remove("is-open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Open navigation");
+  }));
 </script>
 </body>
 </html>

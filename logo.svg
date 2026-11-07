@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+<title id="title">Sangwan Digital Studio logo</title>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#75a6ff"/>
+    <stop offset="1" stop-color="#3978e8"/>
+  </linearGradient>
+</defs>
+<rect x="4" y="4" width="120" height="120" rx="25" fill="#111c2e" stroke="#456da9" stroke-opacity=".65" stroke-width="2"/>
+<path d="M83 31H52c-12 0-20 7-20 18 0 10 6 15 17 18l25 7c7 2 10 5 10 10 0 6-5 10-13 10H33" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M91 31v64" stroke="#e8efff" stroke-opacity=".9" stroke-width="5" stroke-linecap="round"/>
+<circle cx="91" cy="23" r="5" fill="#75a6ff"/>
+</svg>
